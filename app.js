@@ -64,7 +64,7 @@ app.use(
         name:"StayPrime",
         secret:process.env.MY_SECRET,
         resave:false,
-        saveUninitilized:false,
+        saveUninitialized:false,
         cookie:{
             httpOnly:true,
             secure:process.env.NODE_ENV==="production",
@@ -77,7 +77,7 @@ app.use(
 
 
 
-if(process.env.NODE_ENV==="prodection"){
+if(process.env.NODE_ENV==="production"){
     app.set("trust proxy",1)
 }
 
