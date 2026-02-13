@@ -81,11 +81,6 @@ if(process.env.NODE_ENV==="production"){
     app.set("trust proxy",1)
 }
 
-
-
-
-
-
 app.use(flash());
 
 app.use(passport.initialize());
@@ -113,10 +108,12 @@ app.use((req,res,next)=>{
 //     res.send(registeredUser);
 // })
 
-
-
 app.use("/listings",listingRouter)
 app.use("/listings/:id/reviews",reviewRouter)
+
+app.get("/",(req,res)=>{
+    res.send("Main page")
+})
 app.use("/",userRouter);
 
 //error handling
