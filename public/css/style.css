@@ -157,3 +157,80 @@ body{
         display: none;
     }
 }
+
+
+
+
+@media (max-width: 992px) {
+
+    .site-title {
+        font-size: 2.7rem;
+        letter-spacing: 1px;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 0.8rem;
+    }
+
+    .show-img {
+        height: 25vh;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    .site-title {
+        font-size: 2.2rem;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .f-info {
+        height: auto;
+        padding: 1rem 0;
+        gap: 0.6rem;
+    }
+
+    .show-img {
+        height: 22vh;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .site-title {
+        font-size: 1.8rem;
+    }
+
+    .fa-web-awesome {
+        font-size: 1.5rem;
+    }
+
+    .f-info-socials i {
+        font-size: 1rem;
+        margin-right: 0.6rem;
+    }
+
+    .show-img {
+        height: 18vh;
+    }
+
+}

@@ -195,3 +195,23 @@
   -webkit-transition: background-position .7s;
   transition: background-position .7s;
 }
+
+
+
+
+
+.starability-result {
+    margin: 0.5rem 0;
+}
+@media (max-width:768px){
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+}
