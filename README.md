@@ -96,7 +96,7 @@ npm run dev
 
 By default, the application runs at:
 ```bash
-http:/localhost:8080```
+http://localhost:8080
 ```
 🗺️ Routes Summary
 
