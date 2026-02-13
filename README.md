@@ -62,18 +62,33 @@ app.js        → Main application entry point
 
 📥 Installation
 
-bash
+```bash
 git clone <your-repository-link>
 cd stayprime
 npm install
+```
 
 
-Environment Setup
+🔑Environment Setup
 Create a .env file in the root directory and add:
+```bash
+ATLASDB_URL=your-mongodb-atlas-url
+SECRET=your-session-secret
 
-## 🗺️ Routes Summary
+CLOUDINARY_CLOUD_NAME=your-cloud-name
+CLOUDINARY_KEY=your-cloud-key
+CLOUDINARY_SECRET=your-cloud-secret
+```
+▶️ Running The Application
+Development Mode
+``` npm run dev```
 
-### 🏠 Listings Routes
+By default, the application runs at:
+```http:/localhost:8080```
+
+🗺️ Routes Summary
+
+🏠 Listings Routes
 
 | Method | Route | Description | Auth |
 |---------|------------|-----------------|----------|
@@ -105,3 +120,35 @@ Create a .env file in the root directory and add:
 | GET | `/login` | Login page | No |
 | POST | `/login` | Authenticate user | No |
 | GET | `/logout` | Logout user | Yes |
+
+## 📸 Features Preview
+
+- Property listing interface  
+- Secure login and signup system  
+- Image upload with cloud storage  
+- Review and rating system  
+- Owner authorization controls  
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository  
+2. Create a feature branch  
+3. Commit your changes  
+4. Push to your branch  
+5. Submit a Pull Request  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👩‍💻 Author
+
+Thanjeela  
+Full Stack Web Development Enthusiast  
+Passionate about building user-friendly and scalable web applications.
