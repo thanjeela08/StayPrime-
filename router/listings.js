@@ -23,7 +23,7 @@ router.route("/")
 //new
 router.get("/new",isLoggedIn,listingController.renderNewForm);
 
-
+router.get("/search",listingController.renderSearchResult)
 
 
  router.route("/:id")

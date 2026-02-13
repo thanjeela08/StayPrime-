@@ -11,6 +11,21 @@ module.exports.renderNewForm = (req,res)=>{
     res.render("listing/new.ejs")
 };
 
+module.exports.renderSearchResult=async(req,res)=>{
+    let search=req.query.search;
+    let searchListing = await Listing.find({$or :[
+            {title :search},
+            {location:search},
+            {country:search},
+    ]})
+    if(searchListing.length === 0){
+        req.flash("error",'“Oops! We couldn’t find any stays like that.”');
+        return res.redirect("/listings")
+    }else{
+        return res.render("listing/index.ejs",{allListings :searchListing})
+    }
+}
+
 module.exports.showListing= async(req,res)=>{
 
     let {id} = req.params;
@@ -59,6 +74,7 @@ module.exports.updateListing = async(req,res)=>{
    req.flash("success","Listing updated successfully");
    res.redirect(`/listings/${id}`);
 }
+
 
 
 

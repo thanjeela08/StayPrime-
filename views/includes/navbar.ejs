@@ -13,7 +13,10 @@
         <a class="nav-link" href="/listings">Explore</a>
         
       </div>
-      
+      <div class="search offset-4 " data-bs-toggle="collapse">
+          <div><input class="form-control mr-sm-2 search-bar" type="search"  placeholder="Search" aria-label="Search" id="search-bar"></div>
+          <div><button class="btn btn-outline my-2 my-sm-0"  id="searchButton" type="submit">Search</button></div>
+      </div>
       
       <div>
          
@@ -32,5 +35,17 @@
     </div>
   </div>
 </nav>
+<script>
+const search=document.getElementById("search-bar");
+search.addEventListener("input",()=>{
+    let searchButton=document.getElementById("searchButton");
+    searchButton.addEventListener("click",()=>{
+        let searchedValue=search.value;
+    window.location.href = `/listings/search?search=${encodeURIComponent(searchedValue)}`;   
+
+})
+
+})
+</script>
 
 
