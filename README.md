@@ -1,13 +1,16 @@
 # 🏨 StayPrime
-A full-stack Node.js/Express web application for discovering and listing premium stay properties. 
-Built using the MVC architecture, StayPrime supports authentication, property listings, image uploads, reviews, and secure session management.
+A full-stack Node.js/Express web application for discovering and listing premium stay properties. Built using the MVC architecture, StayPrime supports authentication, property listings, image uploads, reviews, and secure session management.
 
-⚡ Overview
+---
+
+## ⚡ Overview
 
 **Tech Stack:**  
 Node.js · Express · MongoDB (Mongoose) · EJS · Passport · Cloudinary · Bootstrap · Mongo Session Store
 
-⭐ Key Features
+---
+
+## ⭐ Key Features
 
 - User authentication (Signup/Login/Logout)
 - CRUD operations for property listings
@@ -19,30 +22,36 @@ Node.js · Express · MongoDB (Mongoose) · EJS · Passport · Cloudinary · Boo
 - Responsive UI using Bootstrap
 - Server-side validation and error handling
 
-🧩 Project Structure (MVC Pattern)
+---
 
-  📦 Model → `/models/`
-  Contains Mongoose schemas for:
-   - Users
-   - Listings
-   - Reviews
+## 🧩 Project Structure (MVC Pattern)
 
-  🎨 View → `/views/`
-  Contains EJS templates including:
-   - Layouts
-   - Listings pages
-   - Authentication pages
-   - Partial components (Navbar, Flash messages)
-
-  ⚙️ Controller → `/controllers/`
-  Handles application logic such as:
-   - Listing operations
-   - User authentication
-   - Review handling
+### 📦 Model → `/models/`
+Contains Mongoose schemas for:
+- Users
+- Listings
+- Reviews
 
 ---
 
-📁 Other Important Folders
+### 🎨 View → `/views/`
+Contains EJS templates including:
+- Layouts
+- Listings pages
+- Authentication pages
+- Partial components (Navbar, Flash messages)
+
+---
+
+### ⚙️ Controller → `/controllers/`
+Handles application logic such as:
+- Listing operations
+- User authentication
+- Review handling
+
+---
+
+### 📁 Other Important Folders
 /routes       → Express route handlers  
 /middleware   → Authentication & authorization middleware  
 /utils        → Helper functions & Cloudinary configuration  
@@ -81,11 +90,14 @@ CLOUDINARY_SECRET=your-cloud-secret
 ```
 ▶️ Running The Application
 Development Mode
-``` npm run dev```
+```bash
+npm run dev
+```
 
 By default, the application runs at:
-```http:/localhost:8080```
-
+```bash
+http:/localhost:8080```
+```
 🗺️ Routes Summary
 
 🏠 Listings Routes
